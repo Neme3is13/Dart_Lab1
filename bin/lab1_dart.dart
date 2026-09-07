@@ -1,52 +1,52 @@
-void main() {
-String name = "Алексей";
-int age = 19;
-double height = 1.75;
-bool isStudent = true;
-
-print(name);
-print(age);
-print(height);
-print(isStudent);
-
-print('Привет, $name ! Тебе $age лет.');
-print('через 5 лет тебе будет ${age + 5} лет');
-print('Рост: ${height} м, студент: $isStudent');
-
-var score = 95;
-var language = 'Dart';
-print('$language: $score');
-
-const String appName = 'Lab1';
-final int startYear = 2026;
-print('$appName started in $startYear');
-
-String? city = null;
-
-if (city != null) {
-  print(
-    city.toUpperCase(),
-  );
+String greet(String name) {
+  return 'Привет, $name!';
 }
 
-print(city?.toUpperCase());
+void main() {
+  String name = "Алексей";
+  int age = 19;
+  double height = 1.75;
+  bool isStudent = true;
 
-String? nickname = null;
-String display =
-    nickname ?? 'Аноним';
-print(display);
+  print(name);
+  print(age);
+  print(height);
+  print(isStudent);
 
-List<String> fruits = ['apple', 'banan', 'grusha'];
-fruits.add('apelsin');
-print(fruits[0]);
-print(fruits.length);
+  print('Привет, $name ! Тебе $age лет.');
+  print('через 5 лет тебе будет ${age + 5} лет');
+  print('Рост: ${height} м, студент: $isStudent');
 
-Map<String, dynamic> person = {'name:': 'Алексей', 'age': 19};
-print(person['name']);
-person['city'] = 'Волжский';
+  var score = 95;
+  var language = 'Dart';
+  print('$language: $score');
 
-Set<int> ids = {1,2,3,2,1};
-print(ids);
-print(ids.length);
+  const String appName = 'Lab1';
+  final int startYear = 2026;
+  print('$appName started in $startYear');
 
+  String? city = null;
+
+  if (city != null) {
+    print(city.toUpperCase());
+  }
+
+  print(city?.toUpperCase());
+
+  String? nickname = null;
+  String display = nickname ?? 'Аноним';
+  print(display);
+
+  List<String> fruits = ['apple', 'banan', 'grusha'];
+  fruits.add('apelsin');
+  print(fruits[0]);
+  print(fruits.length);
+
+  Map<String, dynamic> person = {'name:': 'Алексей', 'age': 19};
+  print(person['name']);
+  person['city'] = 'Волжский';
+
+  Set<int> ids = {1, 2, 3, 2, 1};
+  print(ids);
+  print(ids.length);
 }
