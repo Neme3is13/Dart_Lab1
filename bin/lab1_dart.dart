@@ -173,7 +173,7 @@ void main() {
     'Maria Petrovna': [4, 4, 5, 5, 4, 5],
     'Ivan Sidorov': [3, 3, 4, 2, 3, 4],
   };
-  print('Analizator Oshibok');
+  print('Analizator Ocenok');
 
   print('Obshaya Statistika');
   int totalStudents = students.length;
